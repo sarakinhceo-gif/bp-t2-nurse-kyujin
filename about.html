@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <title>형님들, 저 믿어도 되나요? - 크롤러 케어 대표 소개</title>
+    <meta name="description" content="단순 코딩만 하는 게 아님. 구글이랑 술 한잔 사드리고, 크롤 버짓이 왜 꽉 조여있는지 속사정 다 털어드림. 강서 마곡에서 밤샘으로 버틴 찐 개발자의 뚝심, 확인해보시죠.">
+    <meta name="keywords" content="구글 봇 정밀 검진, 크롤 버짓 밀착 간호, 크롤러 케어, 개발자 소개, 마곡 개발자, SEO 컨설팅">
+    <link rel="canonical" href="https://nurse-kyujin.online/about">
+    <meta property="og:title" content="형님들, 저 믿어도 되나요? - 크롤러 케어 대표 소개">
+    <meta property="og:description" content="구글 봇 정밀 검진 및 크롤 버짓 밀착 간호. 개발자 출신이 발로 뛰어서 파온 찐솔 후기입니다.">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-color: #f4f4f0;
+            --text-color: #000000;
+            --accent-color: #FFF800; /* Acid Yellow */
+            --border-width: 3px;
+            --spacing-unit: 24px;
+            --font-main: 'Courier New', Courier, monospace;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            border: var(--border-width) solid var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            padding: var(--spacing-unit);
+        }
+
+        /* Header & Nav */
+        .header {
+            border-bottom: var(--border-width) solid var(--text-color);
+            padding: var(--spacing-unit) 0;
+        }
+
+        .brand {
+            font-size: 2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: var(--spacing-unit);
+            display: block;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            font-weight: 700;
+            text-transform: uppercase;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav a:hover {
+            background-color: var(--accent-color);
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            padding: calc(var(--spacing-unit) * 2) 0;
+        }
+
+        .section {
+            margin-bottom: calc(var(--spacing-unit) * 3);
+        }
+
+        h1, h2, h3 {
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: var(--spacing-unit);
+            line-height: 1.2;
+        }
+
+        h1 { font-size: clamp(2rem, 5vw, 4rem); }
+        h2 { font-size: clamp(1.5rem, 3vw, 2.5rem); border-left: 10px solid var(--accent-color); padding-left: 15px; }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: var(--spacing-unit);
+            max-width: 80ch;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background-color: var(--text-color);
+            color: var(--accent-color);
+            padding: var(--spacing-unit);
+            border: var(--border-width) solid var(--text-color);
+            margin: var(--spacing-unit) 0;
+            font-weight: bold;
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-unit);
+            margin-top: var(--spacing-unit);
+        }
+
+        .card {
+            border: var(--border-width) solid var(--text-color);
+            padding: var(--spacing-unit);
+            background: #fff;
+            box-shadow: 10px 10px 0px var(--text-color);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 15px 15px 0px var(--accent-color);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            background: var(--text-color);
+            color: #fff;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: var(--border-width) solid var(--text-color);
+            padding: var(--spacing-unit) 0;
+            background-color: var(--accent-color);
+            text-align: center;
+            font-weight: 900;
+        }
+
+        @media (max-width: 768px) {
+            .nav { flex-direction: column; gap: 10px; }
+            .container { padding: 15px; }
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="/" class="brand">NURSE KYUJIN // 크롤러 케어</a>
+            <nav class="nav">
+                <a href="/">메인 (진료실)</a>
+                <a href="/about" style="text-decoration: underline;">소개 (이놈이 누구?)</a>
+                <a href="/service">서비스 (처방전)</a>
+                <a href="/blog">블로그 (간ᄕᅩ일지)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            
+            <!-- Hero Section -->
+            <section class="section">
+                <h1>형님들, 저 믿어도 되나요? <br><span style="background: var(--accent-color);">크롤러 케어</span> 대표 인사드립니다.</h1>
+                <div class="highlight-box">
+                    "단순 코딩만 파는 게 아임다. 구글이랑 술 한잔 사드리고, 크롤 버짓이 왜 꽉 조여있는지 속사정 다 털어드림."
+                </div>
+            </section>
+
+<!-- SEO Visual 2: 크롤러 케어 Brutalist Typography Cards -->
+<div class="seo-visual-cards" role="img" aria-label="구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 크롤러 케어 — 신뢰할 수 있는 서비스" 
+     style="display:flex;flex-direction:column;gap:80px;margin:120px auto;max-width:1100px;padding:0 24px">
+  <div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">01</div>
+    <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">SEO 대책</div>
+    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">구글 봇 정밀 검진 및 크롤 버짓 밀착 간호</div>
+  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">02</div>
+    <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">집객 지원</div>
+    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">구글 봇 정밀 검진 및 크롤 버짓 밀착 간호</div>
+  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">03</div>
+    <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">분석</div>
+    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">구글 봇 정밀 검진 및 크롤 버짓 밀착 간호</div>
+  </div>
+</div>
+
+            <!-- Story Section -->
+            <section class="section">
+                <h2>01. 왜 내가 이 일을 하는가? (썰 좀 풀어본다)</h2>
+                <p>
+                    안녕하세요. 강서 마곡 구석에서 키보드 두드리며 구글이랑 줄다리기 하듯 지내는 개발자입니다.<br><br>
+                    솔직히 말씀드려서, 형님들 블로그 보니까 너무 답답해서 가만히 있을 수가 없더라고요. 좋은 글 쓰는데 색인이 안 되고, 도메인 지수는 개판이라니요. 그거 제가 딱 봐도 알 수 있는데, 형님들은 영문을 모르시잖아요.
+                </p>
+                <p>
+                    저도 예전에는 구글 봇이 제 사이트를 안 쳐다봐줘서 밤새 술로 버틴 적 있습니다. 그 '내상' 안 입게 해드리려고 이거 시작했습니다.
+                    <br><strong>비싼 학원 커리큘럼 같은 거 없이, 실무에서 피 똥 싸가며 익힌 기술로 형님들 사이트 싹 싹 씻어드립니다.</strong>
+                </p>
+            </section>
+
+            <!-- Expertise Cards -->
+            <section class="section">
+                <h2>02. 이 양반, 뭐가 잘나나? (전문성 시그널)</h2>
+                <div class="grid-cards">
+                    <article class="card">
+                        <h3>구글 봇 속박사</h3>
+                        <p>봇이 어디서 막히는지, 로그 기가 막히게 해ᅢ석 가능. "서버가 느려요"가 아니라 "봇이 지쳐서 주저앉았네요"라고 딱 잘라 말합니다.</p>
+                    </article>
+                    <article class="card">
+                        <h3>코드 미용실</h3>
+                        <p>지저분한 코드 정리 안 하면 구글이 싫어합니다. 싹 걷어내고 깔끔하게 세팅해드리면, 인덱스 속도가 다릅니다.</p>
+                    </article>
+                    <article class="card">
+                        <h3>현실 밀착형 솔루션</h3>
+                        <p>어려운 용어로 현혹 안 합니다. "이거 고치면 방ᄗᅮᆫ자 00 명 늡니다"라고 딱 정해드립니다. 속는 셈 치고 맡겨보세요. 후회 없슴.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Closing -->
+            <section class="section">
+                <h2>03. 같이 안 해보겠음? (Call to Action)</h2>
+                <p>
+                    지금 당장 블로그가 꼬여서 잠도 못 주무시나요? 아니면 그냥 슬슬 키워볼까 슬슬 고민 중이신가요?
+                    <br>어디서부터 어디까지 망가졌는지 싹 정밀 검진부터 해드립니다.
+                </p>
+                <div style="margin-top: 30px; border: 3px solid black; padding: 20px; background: white;">
+                    <p style="margin-bottom: 10px; font-weight: 900;">[진행 방식]</p>
+                    <ol style="margin-left: 20px; font-weight: 700;">
+                        <li>1. 상담 (형님이 힘드신 부분 툭 던져주세요)</li>
+                        <li>2. 정밀 검진 (제가 싹 다 뜯어봄)</li>
+                        <li>3. 밀착 간호 (치료 깇 세팅 완료)</li>
+                        <li>4. 회생 (방문ᆫ자 개이득)</li>
+                    </ol>
+                </div>
+            
+<div class="seo-visual-divider" role="separator" aria-label="구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 구분선" style="margin:80px 0;height:1px;background:#888888;opacity:0.1"></div>
+</section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 NURSE KYUJIN. ALL RIGHTS RESERVED.</p>
+            <p>LOCATION: GANGSEO-GU, MAGOK-DONG (술 한잔하러 오시는 거 아님)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
